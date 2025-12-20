@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.accordion-item{
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+   
+
+    .accordion-header{
+        width: 100%;
+        height: 100px;
+        background-color: grey;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .icon{
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+
+    .accordion-content{
+        width: 100%;
+
+        /* ilk once gorunmemelidir, classi active olanda gorunmelidir */
+        display: none;
+    }
+}
+
+.accordion-item.active .accordion-content{
+    /* active olanda gorunmeye baslasin */
+    display: block;
+}
