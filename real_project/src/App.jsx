@@ -18,12 +18,6 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Navigate to="/products" replace />} />
-
-
-
-
-
-
         
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
